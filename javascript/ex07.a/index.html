@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <p>sou um paragrafo alterado em javascript!</p>
+    <p>não sou alterado</p>
+
+<button id="botao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> ME TOQUE</button>
+</div>
+
+    <script>
+       /*let p1 = window.document.getElementsByName('p')[1];
+        p.style.background='red'
+        p.innerT*/
+        let body= window.document.getElementById('body');
+        let a = window.document.getElementById('botao');
+        let verificar;
+      
+        if( body.style.background =='red')
+       {
+        function clicar() {
+            a.innerText= '1'
+            a.style.background='red'
+            body.style.background='red'
+       }
+    }
+       else
+       {     
+            function clicar() {
+            a.innerText= 'Troque o fundo!'
+            a.style.background='aquamarine'
+            body.style.background='cadetblue'
+        }
+           
+        }
+  
+      
+
+      /* function entrar(){
+            a.innerText= 'Entrou'
+            a.style.background='green'
+        }
+        function sair(){
+            a.innerText='Saiu'
+            a.style.background='#ffffff'
+        }
+        */
+    </script>
+</body>
+</html>

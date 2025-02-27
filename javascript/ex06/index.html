@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundos em minutos e horas</title>
+</head>
+<body>
+    <script>
+        let  anos=0 , meses=0, semanas=0,dias=0 ,minutos=0, horas=0, segundos=0;
+        
+         anosdados= Number.parseFloat(window.prompt('digite o valor em anos '));
+        
+        diasdados=(anosdados*365)/1
+
+         meses=(diasdados/30)|0
+
+         semanas=(diasdados - (meses*30))/4 |0;
+
+         dias= (diasdados - (meses*30 + semanas*4)/7)|0
+
+       
+       
+         ver=(diasdados - meses*30 + semanas*4 + dias*7)
+        
+        
+        
+        window.alert(`${diasdados} diasdados ${ver} diassomados`)
+
+         horas=(diasdados-(meses*30 + semanas*4 + dias*7))/24 |0         
+        
+         minutos= (diasdados- (meses*30 + semanas*4 + dias*7 + horas*24))/60|0
+         segundos=( diasdados-(meses*30 + semanas*4 + dias*7 + horas*4 + 60*minutos))/60
+         window.alert(`${anosdados} anos contêm ${meses} meses,  ${semanas} semanas  ${dias} dias,  ${horas} horas  ${minutos} minutos  ${segundos} segundos `);
+
+         
+
+    </script>
+</body>
+</html>
