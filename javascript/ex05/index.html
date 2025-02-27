@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundos em minutos e horas</title>
+</head>
+<body>
+    <script>
+        let minutos=0, horas=0, segundos=0;
+        
+         let horasdadas= window.prompt('Digite o valor em segundos');
+        segundos=horasdadas
+        
+          //4
+          horas=(horasdadas/3600)|0
+                               //4
+          minutos= (horasdadas - (horas  * 3600) )/60 |0
+         segundos=(horasdadas- (horas  * 3600 + minutos *60))/60
+      
+          window.alert(`${horasdadas} segundos contêm ${horas} horas,  ${minutos} minutos e ${segundos} segundos`);
+
+    </script>
+</body>
+</html>

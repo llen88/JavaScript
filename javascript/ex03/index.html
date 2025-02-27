@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+     let  peso= Number.parseFloat(window.prompt('digite o seu peso (em kg): '));
+     let altura= Number.parseFloat(window.prompt('Digite sua altura'));
+    
+     let imc= peso/(altura*altura);
+
+    
+    window.alert('O seu mc '+ imc);
+
+    
+    if(imc < 17.3 ){
+    window.alert('Magreza');
+    }
+    else if(imc < 25.5 ){
+    window.alert('normal');
+    }
+    else if(imc < 29.7 ){
+    window.alert('Sobrepeso');
+    }
+    else if(imc > 29.7 )
+    window.alert('Obesidade');
+        
+    </script>
+
+</body>
+</html>
