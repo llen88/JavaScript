@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercios dados</title>
+</head>
+<body>
+    <p>Vetor</p>
+    <script>
+        let  quantDados= Number.parseInt(window.prompt('digite o numero de dados que deseja jogar '));
+        
+        let numVetor=[];
+
+        for(let pos=0; pos <quantDados; pos++)
+        {
+            numVetor[pos] = Number.parseFloat(window.prompt('Digite o número a ser armazenado:'));
+        }
+        
+        numVetor[quantDados]=10;
+        numVetor.sort((a,b) => a-b);
+
+        for(let pos=0; pos<=quantDados;pos++)
+        {
+        document.write(`${numVetor[pos]} <br>`);
+        }
+
+   </script>
+</body>
+</html>
